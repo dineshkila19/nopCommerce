@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="nopCommerce">
+
+
+	<listeners>
+
+		<listener class-name="com.NopCommerce.utilities.Reporting"/>
+
+	</listeners>
+
+
+	<test name="ECommerceApp Test">
+
+		<parameter name="browser" value="chrome"/>
+
+
+			<classes>
+
+				<class name="com.nopCommerce.testCases.IndexPageTest"/>
+ 
+				<!-- <class name="com.nopCommerce.testCases.RegisterPageTest" />-->
+
+
+				<!--  <class name="com.nopCommerce.testCases.LoginPageTest"/> -->
+
+			</classes>
+
+	</test>
+
+</suite>
